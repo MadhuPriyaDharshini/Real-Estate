@@ -5,3 +5,16 @@ text-align: center;
 padding: 15px;  
 /*border: 3px solid red;*/  
 }
+
+a:link {
+   color : red;
+ }
+ a:visited{
+   color : green;
+ }
+ a:hover{
+   color:yellow;
+ }
+ a:active{
+   color:orange;
+ }
