@@ -49,6 +49,17 @@ a:link {
    color:orange;
  }
 
+footer{ 
+  background-color: #111;
+  color:aliceblue;
+  text-align: center;
+  position:absolute; 
+  bottom:0; 
+  width:100%; 
+  height:50px; 
+}
+
+
  table {
   border-collapse: collapse;
   width: 100%;
