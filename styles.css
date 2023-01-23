@@ -37,9 +37,11 @@
 img {  
 width: 800px;  
 height: auto;  
-text-align: center; 
- 
-padding: 15px;  
+text-align: center;  
+padding: 15px;
+display: block;
+margin-left: auto;
+margin-right: auto;  
 /*border: 3px solid red;*/  
 }
 
