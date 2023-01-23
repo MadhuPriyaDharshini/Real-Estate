@@ -64,8 +64,11 @@ footer{
   height:50px; 
 }
 
+video{
+ margin:20px;
+}
 
- table {
+table {
   border-collapse: collapse;
   width: 100%;
 }
