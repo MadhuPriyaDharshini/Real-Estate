@@ -48,3 +48,12 @@ a:link {
  a:active{
    color:orange;
  }
+
+ footer {
+  /*background-color: black;*/
+  color: white;
+  bottom: 0;
+  width: 100vw;
+  font-size: 16px;
+}
+
