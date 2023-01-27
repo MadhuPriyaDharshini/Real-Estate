@@ -12,23 +12,23 @@
 <div class="container right-panel-active">
 	<!-- Sign Up -->
 	<div class="container__form container--signup">
-		<form action="#" class="form" id="form1">
+		<form name="myForm1" action="#" class="form" id="form1" onsubmit="return validateForm1()">
 			<h2 class="form__title">Sign Up</h2>
-			<input type="text" placeholder="User" class="input" />
-			<input type="email" placeholder="Email" class="input" />
-			<input type="password" placeholder="Password" class="input" />
-			<button class="btn">Sign Up</button>
+			<input type="text" name="uname" placeholder="User" class="input" />
+			<input type="email" name="ename1" placeholder="Email" class="input" />
+			<input type="password" name="pname1" placeholder="Password" class="input" />
+			<button class="btn" type="submit">Sign Up</button>
 		</form>
 	</div>
 
 	<!-- Sign In -->
 	<div class="container__form container--signin">
-		<form action="#" class="form" id="form2">
+		<form name="myForm" action="#" class="form" id="form2" onsubmit="return validateForm()">
 			<h2 class="form__title">Sign In</h2>
-			<input type="email" placeholder="Email" class="input" />
-			<input type="password" placeholder="Password" class="input" />
+			<input type="email" name="ename" placeholder="Email" class="input" />
+			<input type="password" name="pname" placeholder="Password" class="input" />
 			<a href="#" class="link">Forgot your password?</a>
-			<button class="btn">Sign In</button>
+			<input class="btn" type="submit" value="SIGN IN">
 		</form>
 	</div>
 
@@ -63,8 +63,40 @@
     fistForm.addEventListener("submit", (e) => e.preventDefault());
     secondForm.addEventListener("submit", (e) => e.preventDefault());
     
-    
-    </script>
+    function validateForm() {
+  let x = document.forms["myForm"]["ename"].value;
+  let y = document.forms["myForm"]["pname"].value;
+  
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  else if (y == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+}
+
+function validateForm1() {
+  let a = document.forms["myForm1"]["uname"].value;
+  let b = document.forms["myForm1"]["pname1"].value;
+  let c = document.forms["myForm1"]["ename1"].value;
+  
+  if (a == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  else if (c == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  else if (b == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+}
+
+</script>
 
 </body>
 </html>
