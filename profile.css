@@ -113,6 +113,10 @@ body {
     .checkbox a:hover {
     color: #85d6de;
     }
+    .radio{
+      align-content: flex-start;
+      text-align: left;
+    }
 
     button {
         margin-top: 3%;

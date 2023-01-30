@@ -22,20 +22,28 @@
     </ul>
     <div style="margin-left:25%;padding:1px 16px;height:1000px;">
       <h2 style="text-align:center;color:white;">Complete your profile to get more personalized reccommendations</h2>
+      <form action="#" method="post" name="form1">
       
       <div class="card" style="background-color:white">
         <img src="./Components/profile.jpeg" alt="Avatar" style="width: 50%;">
         <div class="container">
           <h4><b>My Details</b></h4>
           <div class="info">
-            <input class="fname" type="text" name="name" placeholder="Full name">
-            <input type="text" name="name" placeholder="Email">
-            <input type="text" name="name" placeholder="Phone number">
-            <input type="date" name="name" placeholder="Date of Birth">
-            <input type="number" name="name" placeholder="Age">
-            <input type="password" name="name" placeholder="Password">
+            <input class="fname" type="text" name="name" placeholder="Full name" required>
+            <input type="email" name="name" required placeholder="Email">
+            <input type="text" name="text1" required placeholder="Phone number">
+            <input type="date" name="text2" required placeholder="Date of Birth">
+            <div class="radio">
+              <label>Gender</label>
+              <input type="radio" id="gender1" name="male" value="male"
+                     checked>
+              <label for="male">Male</label>
+              <input type="radio" id="gender2" name="female" value="female">
+              <label for="female">Female</label>
+            </div>
+            <input type="password" name="name" required placeholder="Password">
             <select>
-              <option value="visit-type" selected>What are you looking for?*</option>
+              <option value="visit-type" selected>What are you looking for?</option>
               <option value="rent-house">Rent a Property</option>
               <option value="sell-house">Sell a Property</option>
               <option value="buy-house">Buy a Property</option>
@@ -45,12 +53,13 @@
             </select>
           </div>
           <div class="checkbox">
-            <input type="checkbox" name="checkbox"><span>I agree to the <a href="https://realty.economictimes.indiatimes.com/terms_conditions.php">Privacy Policy of Real Traders.</a></span>
+            <input type="checkbox" name="checkbox" required><span>I agree to the <a href="https://realty.economictimes.indiatimes.com/terms_conditions.php">Privacy Policy of Real Traders.</a></span>
           </div>
-          <button type="submit" href="/">Save Changes</button>
+          <button type="submit" onclick="phonenumber(document.form1.text1)" href="#">Save Changes</button>
         </div>
+        </div>
+        </form>
       </div>
-
-    </div>
+      <script src="profile.js"></script>
     </body>
     </html>
