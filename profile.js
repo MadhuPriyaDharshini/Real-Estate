@@ -4,7 +4,7 @@ function phonenumber(inputtxt, inputdate)
 
   if(inputtxt.value.match(phoneno))
   {
-      flag = 1;
+      return true;
   }
   else
   {
