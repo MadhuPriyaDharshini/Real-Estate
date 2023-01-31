@@ -1,10 +1,10 @@
-function phonenumber(inputtxt, inputdate)
+function phonenumber(inputtxt)
 {
   var phoneno = /^\d{10}$/;
 
   if(inputtxt.value.match(phoneno))
   {
-      flag = 1;
+      return true;
   }
   else
   {
