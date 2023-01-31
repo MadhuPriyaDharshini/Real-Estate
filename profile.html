@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="android-chrome-512x512.png" type="image/icon type" >
+    <script src="/profile.js" ></script>
 
 </head>
 <body>
@@ -20,21 +21,21 @@
       <li><a href="#contact">Contact</a></li>
       <li><a href="#about">About</a></li>
     </ul>
-    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;" >
       <h2 style="text-align:center;color:white;">Complete your profile to get more personalized reccommendations</h2>
-      
+     <form > 
       <div class="card" style="background-color:white">
         <img src="./Components/profile.jpeg" alt="Avatar" style="width: 50%;">
         <div class="container">
           <h4><b>My Details</b></h4>
           <div class="info">
-            <input class="fname" type="text" name="name" placeholder="Full name">
-            <input type="text" name="name" placeholder="Email">
-            <input type="text" name="name" placeholder="Phone number">
-            <input type="date" name="name" placeholder="Date of Birth">
-            <input type="number" name="name" placeholder="Age">
-            <input type="password" name="name" placeholder="Password">
-            <select>
+            <input class="fname" type="text" name="name" placeholder="Full name" required>
+            <input id="Email" type="text" name="name" placeholder="Email" required>
+            <input id ="ph_num" type="text" name="name" placeholder="Phone number" required>
+            <input type="date" name="name" placeholder="Date of Birth" required>
+            <input type="number" name="name" placeholder="Age" required>
+            <input id="password" type="password" name="name" placeholder="Password" required>
+            <select id="option" required>
               <option value="visit-type" selected>What are you looking for?*</option>
               <option value="rent-house">Rent a Property</option>
               <option value="sell-house">Sell a Property</option>
@@ -45,12 +46,13 @@
             </select>
           </div>
           <div class="checkbox">
-            <input type="checkbox" name="checkbox"><span>I agree to the <a href="https://realty.economictimes.indiatimes.com/terms_conditions.php">Privacy Policy of Real Traders.</a></span>
+            <input type="checkbox" name="checkbox" id="checkbox"><span>I agree to the <a href="https://realty.economictimes.indiatimes.com/terms_conditions.php">Privacy Policy of Real Traders.</a></span>
           </div>
           <button type="submit" href="/">Save Changes</button>
         </div>
       </div>
 
     </div>
+  </form>
     </body>
     </html>
